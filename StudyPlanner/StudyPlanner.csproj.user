@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ToastNotification .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\CalculatorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\HomeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\NotesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\StudyResourcesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\TimerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
