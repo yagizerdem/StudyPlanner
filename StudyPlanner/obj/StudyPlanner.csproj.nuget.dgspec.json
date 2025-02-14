@@ -78,6 +78,10 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.1.2, )"
             }
           },
           "imports": [

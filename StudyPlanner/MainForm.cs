@@ -4,6 +4,9 @@ using StudyPlanner.Views;
 using System.Drawing.Design;
 using StudyPlanner;
 using DataContext;
+using Service;
+using Microsoft.Extensions.DependencyInjection;
+using Models;
 
 
 namespace StudyPlanner
@@ -12,8 +15,6 @@ namespace StudyPlanner
     {
         private GradientPanel LeftPanel;
         private Panel MainPanel;
-
-
         public void LoadMainFrame()
         {
 
@@ -29,8 +30,8 @@ namespace StudyPlanner
             MainPanel.BackColor = Color.FromArgb(211, 211, 211);
 
 
-            this.Width = 800;
-            this.Height = 600;
+            this.Width = 1000;
+            this.Height = 800;
 
             LeftPanel.Width = 200;
             LeftPanel.Dock = DockStyle.Left;
@@ -46,7 +47,7 @@ namespace StudyPlanner
             HomeButton.Click += (sender, args) => SwitchPanel(new HomeView());
             HomeButton.Left = (LeftPanel.Width - HomeButton.Width) / 2;
 
-            
+
             Button TimerButton = new MenuButtons(120, "Timer");
             TimerButton.Click += (sender, args) => SwitchPanel(new TimerView());
             TimerButton.Left = (LeftPanel.Width - TimerButton.Width) / 2;
@@ -65,25 +66,45 @@ namespace StudyPlanner
             StudyResourcesViewButton.Left = (LeftPanel.Width - StudyResourcesViewButton.Width) / 2;
 
 
+            Button TimableViewButton = new MenuButtons(480, "Timable");
+            TimableViewButton.Click += (sender, args) => SwitchPanel(new TimableView());
+            TimableViewButton.Left = (LeftPanel.Width - TimableViewButton.Width) / 2;
+
+            Button ExtractPdfButton = new MenuButtons(570, "Extract pdf");
+            ExtractPdfButton.Click += (sender, args) => SwitchPanel(new TimableView());
+            ExtractPdfButton.Left = (LeftPanel.Width - TimableViewButton.Width) / 2;
+
+
             LeftPanel.Controls.Add(HomeButton);
             LeftPanel.Controls.Add(TimerButton);
             LeftPanel.Controls.Add(CalculatorButton);
             LeftPanel.Controls.Add(NoteViewButton);
             LeftPanel.Controls.Add(StudyResourcesViewButton);
+            LeftPanel.Controls.Add(TimableViewButton);
+            LeftPanel.Controls.Add(ExtractPdfButton);
 
-            SwitchPanel(new StudyResourcesView());
+            SwitchPanel(new TimableView());
 
 
             this.Controls.Add(MainPanel);
             this.Controls.Add(LeftPanel);
+
+
+
+            ExtractPdfButton.Click += async (sender, args) =>
+            {
+                PdfGenerator pdfGenerator = new PdfGenerator();
+                await pdfGenerator.GeneratePdf();
+            };
+
+
         }
-            
+
 
         public MainForm()
         {
             InitializeComponent();
             this.Load += (sender, args) => LoadMainFrame();
-
         }
 
 
@@ -220,3 +241,5 @@ public class MenuButtons : Button
         return path;
     }
 }
+
+

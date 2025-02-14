@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4AD01A2-550C-4E99-A445-BBB5D229BA91}|Models\\Models.csproj|c:\\users\\yagiz\\desktop\\studyplanner\\models\\resourcesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4AD01A2-550C-4E99-A445-BBB5D229BA91}|Models\\Models.csproj|solutionrelative:models\\resourcesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656A9F95-28F2-427B-BC98-D4B7AC9B4057}|Service\\Service.csproj|c:\\users\\yagiz\\desktop\\studyplanner\\service\\studyresourcescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{656A9F95-28F2-427B-BC98-D4B7AC9B4057}|Service\\Service.csproj|solutionrelative:service\\studyresourcescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4AD01A2-550C-4E99-A445-BBB5D229BA91}|Models\\Models.csproj|c:\\users\\yagiz\\desktop\\studyplanner\\models\\unitmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4AD01A2-550C-4E99-A445-BBB5D229BA91}|Models\\Models.csproj|solutionrelative:models\\unitmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB6DB954-88CD-4579-94BA-4717D46F7878}|DataContext\\DataContext.csproj|c:\\users\\yagiz\\desktop\\studyplanner\\datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB6DB954-88CD-4579-94BA-4717D46F7878}|DataContext\\DataContext.csproj|solutionrelative:datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAA95078-E193-42AC-882D-DEEE94E76217}|StudyPlanner\\StudyPlanner.csproj|c:\\users\\yagiz\\desktop\\studyplanner\\studyplanner\\views\\studyresourcesview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA95078-E193-42AC-882D-DEEE94E76217}|StudyPlanner\\StudyPlanner.csproj|solutionrelative:studyplanner\\views\\studyresourcesview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudyResourcesController.cs",
-              "DocumentMoniker": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\Service\\StudyResourcesController.cs",
-              "RelativeDocumentMoniker": "Service\\StudyResourcesController.cs",
-              "ToolTip": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\Service\\StudyResourcesController.cs",
-              "RelativeToolTip": "Service\\StudyResourcesController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T20:02:30.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\DataContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "DataContext\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\DataContext\\AppDbContext.cs",
-              "RelativeToolTip": "DataContext\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T19:27:26.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ResourcesModel.cs",
-              "DocumentMoniker": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\Models\\ResourcesModel.cs",
-              "RelativeDocumentMoniker": "Models\\ResourcesModel.cs",
-              "ToolTip": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\Models\\ResourcesModel.cs",
-              "RelativeToolTip": "Models\\ResourcesModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "StudyResourcesView.cs",
+              "DocumentMoniker": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\StudyPlanner\\Views\\StudyResourcesView.cs",
+              "RelativeDocumentMoniker": "StudyPlanner\\Views\\StudyResourcesView.cs",
+              "ToolTip": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\StudyPlanner\\Views\\StudyResourcesView.cs",
+              "RelativeToolTip": "StudyPlanner\\Views\\StudyResourcesView.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAkwEQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T19:25:28.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UnitModel.cs",
-              "DocumentMoniker": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\Models\\UnitModel.cs",
-              "RelativeDocumentMoniker": "Models\\UnitModel.cs",
-              "ToolTip": "C:\\Users\\yagiz\\Desktop\\StudyPlanner\\Models\\UnitModel.cs",
-              "RelativeToolTip": "Models\\UnitModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T19:24:41.628Z",
+              "WhenOpened": "2025-02-14T01:18:33.359Z",
               "EditorCaption": ""
             }
           ]

@@ -55,6 +55,7 @@ namespace StudyPlanner
             services.AddSingleton<AppDbContext>();
             services.AddSingleton<NotesController>();
             services.AddSingleton<StudyResourcesController>();
+            services.AddSingleton<TimableEventController>();
         }
 
     }

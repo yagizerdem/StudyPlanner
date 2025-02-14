@@ -19,6 +19,9 @@
     <Compile Update="Views\StudyResourcesView.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Views\TimableView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Views\TimerView.cs">
       <SubType>UserControl</SubType>
     </Compile>

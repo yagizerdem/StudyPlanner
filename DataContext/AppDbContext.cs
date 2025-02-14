@@ -11,6 +11,8 @@ namespace DataContext
         public DbSet<SubjectModel> Subjects { get; set; }
         public DbSet<ResourcesModel> Resources { get; set; }
 
+        public DbSet<TimableEventModel> TimableEvents { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Retrieve the database path from an environment variable

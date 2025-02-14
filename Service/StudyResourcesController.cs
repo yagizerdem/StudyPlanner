@@ -71,5 +71,89 @@ namespace Service
                 return ServiceResponse<List<SubjectModel>>.Fail(null, "error occured");
             }
         }
+    
+        
+        public async Task<ServiceResponse<SubjectModel>> RemoveSubject(int id)
+        {
+            try
+            {
+                SubjectModel? modelFromDb = await _context.Subjects.FirstOrDefaultAsync(x => x.Id == id);   
+                if(modelFromDb == null)
+                {
+                    return ServiceResponse<SubjectModel>.Fail(null, "model not found");
+                }
+
+                _context.Subjects.Remove(modelFromDb);
+
+                await _context.SaveChangesAsync();
+
+                return ServiceResponse<SubjectModel>.Success(modelFromDb, "subject removed from database successfully");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return ServiceResponse<SubjectModel>.Fail(null, "error occured");
+            }
+        }
+
+
+        public async Task<ServiceResponse<UnitModel>> RemoveUnit(int id)
+        {
+            try
+            {
+                UnitModel? unitFromDb = await _context.Units.FirstOrDefaultAsync(x => x.Id == id);
+                if (unitFromDb == null)
+                {
+                    return ServiceResponse<UnitModel>.Fail(null, "model not found");
+                }
+
+                _context.Units.Remove(unitFromDb);
+
+                if (unitFromDb.Subject.Unit.Count == 1)
+                {
+                    await this.RemoveSubject(unitFromDb.SubjectId);
+                }
+
+                await _context.SaveChangesAsync();
+
+                return ServiceResponse<UnitModel>.Success(unitFromDb, "subject removed from database successfully");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return ServiceResponse<UnitModel>.Fail(null, "error occured");
+            }
+        }
+
+
+
+        public async Task<ServiceResponse<ResourcesModel>> RemoveResource(int id)
+        {
+            try
+            {
+                ResourcesModel? resourceFromDb = await _context.Resources.FirstOrDefaultAsync(x => x.Id == id);
+                if (resourceFromDb == null)
+                {
+                    return ServiceResponse<ResourcesModel>.Fail(null, "model not found");
+                }
+
+                _context.Resources.Remove(resourceFromDb);
+
+                if (resourceFromDb.Unit.Resources.Count == 1)
+                {
+                    await this.RemoveUnit(resourceFromDb.UnitId);
+                }
+
+                await _context.SaveChangesAsync();
+
+                return ServiceResponse<ResourcesModel>.Success(resourceFromDb, "resource removed from database successfully");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return ServiceResponse<ResourcesModel>.Fail(null, "error occured");
+            }
+        }
+
     }
 }

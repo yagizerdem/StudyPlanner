@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudyPlanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3a4cbf02f5e328b668258cbf10ce83467ca9fde")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudyPlanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudyPlanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

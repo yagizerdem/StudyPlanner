@@ -92,6 +92,30 @@ namespace DataContext.Migrations
                     b.ToTable("Subjects");
                 });
 
+            modelBuilder.Entity("Models.TimableEvent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("EventTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TimableEvents");
+                });
+
             modelBuilder.Entity("Models.UnitModel", b =>
                 {
                     b.Property<int>("Id")
